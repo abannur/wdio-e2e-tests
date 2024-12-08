@@ -69,7 +69,7 @@ export const config: defineConfig = {
         //u can open you own chrome profile and resolution of your machine,
         //create profile for each browser
         "goog:chromeOptions":{
-            args:headless?.toUpperCase() ==="Y"? ["--disable-web-security","--headless","--disable-dev-shm-usage","--no-sandbox",
+            args:headless.toUpperCase() ==="Y"? ["--disable-web-security","--headless","--disable-dev-shm-usage","--no-sandbox",
             "--window-size=1920,1080"]:[]
              // disable ssl cert verification
         },
