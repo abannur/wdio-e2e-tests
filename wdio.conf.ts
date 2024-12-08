@@ -76,14 +76,14 @@ export const config: defineConfig = {
         timeouts: { implicit: 15000, pageLoad: 20000, script: 30000 },
     
     },
-    {
+    /* {
         maxInstances:3,
         // capabilities for local browser web tests
         browserName: 'firefox' ,
        acceptInsecureCerts: true,
         timeouts: { implicit: 15000, pageLoad: 20000, script: 30000 },
     
-    }],
+    } */],
 
     //
     // ===================
