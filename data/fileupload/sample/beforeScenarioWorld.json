@@ -1,0 +1,126 @@
+{
+  "gherkinDocument": {
+    "feature": {
+      "tags": [],
+      "location": { "line": 1, "column": 1 },
+      "language": "en",
+      "keyword": "Feature",
+      "name": "Inventory",
+      "description": "",
+      "children": [
+        {
+          "scenario": {
+            "id": "01f97eee-7aac-439e-a138-f25b6868cc4b",
+            "tags": [
+              {
+                "location": { "line": 3, "column": 5 },
+                "name": "@demo",
+                "id": "6846055e-4bda-4c48-8722-6ed39b9f6bcc"
+              }
+            ],
+            "location": { "line": 4, "column": 5 },
+            "keyword": "Scenario Outline",
+            "name": "<TestID> :Demo web interactions",
+            "description": "",
+            "steps": [
+              {
+                "id": "141896b3-1f4e-4ec3-88c9-ded478a95543",
+                "location": { "line": 5, "column": 9 },
+                "keyword": "Given ",
+                "keywordType": "Context",
+                "text": "Login to the inventory web app"
+              },
+              {
+                "id": "d93af56d-17f5-4fba-a8c2-9e727397bfa1",
+                "location": { "line": 6, "column": 9 },
+                "keyword": "Then ",
+                "keywordType": "Outcome",
+                "text": "Inventory page should list <NumberOfProducts>"
+              }
+            ],
+            "examples": [
+              {
+                "id": "4bfbafc8-2ba7-4240-9014-7c2aa6ebb0e3",
+                "tags": [],
+                "location": { "line": 9, "column": 9 },
+                "keyword": "Examples",
+                "name": "",
+                "description": "",
+                "tableHeader": {
+                  "id": "3a412dca-4f4f-420d-aded-4ce6feea6150",
+                  "location": { "line": 10, "column": 13 },
+                  "cells": [
+                    {
+                      "location": { "line": 10, "column": 15 },
+                      "value": "TestID"
+                    },
+                    {
+                      "location": { "line": 10, "column": 26 },
+                      "value": "NumberOfProducts"
+                    }
+                  ]
+                },
+                "tableBody": [
+                  {
+                    "id": "691be09c-c061-479a-b5d2-a1d8a3f9f93d",
+                    "location": { "line": 11, "column": 13 },
+                    "cells": [
+                      {
+                        "location": { "line": 11, "column": 15 },
+                        "value": "Inv_TC001"
+                      },
+                      { "location": { "line": 11, "column": 27 }, "value": "6" }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "comments": [
+      {
+        "location": { "line": 7, "column": 1 },
+        "text": "        #Then Validate all products have valid price"
+      }
+    ],
+    "uri": "test\\features\\Inventory\\Inventory.feature"
+  },
+  "pickle": {
+    "id": "527e88bf-9bb2-402d-8685-94b4e90ac281",
+    "uri": "test\\features\\Inventory\\Inventory.feature",
+    "astNodeIds": [
+      "01f97eee-7aac-439e-a138-f25b6868cc4b",
+      "691be09c-c061-479a-b5d2-a1d8a3f9f93d"
+    ],
+    "name": "Inv_TC001 :Demo web interactions",
+    "language": "en",
+    "steps": [
+      {
+        "id": "cef8926c-d999-4d01-8d79-1af817c3474b",
+        "text": "Login to the inventory web app",
+        "type": "Context",
+        "astNodeIds": [
+          "141896b3-1f4e-4ec3-88c9-ded478a95543",
+          "691be09c-c061-479a-b5d2-a1d8a3f9f93d"
+        ],
+        "keyword": "Given "
+      },
+      {
+        "id": "7d33291d-84ce-470d-b8e5-c16ec0ff1098",
+        "text": "Inventory page should list 6",
+        "type": "Outcome",
+        "astNodeIds": [
+          "d93af56d-17f5-4fba-a8c2-9e727397bfa1",
+          "691be09c-c061-479a-b5d2-a1d8a3f9f93d"
+        ],
+        "keyword": "Then "
+      }
+    ],
+    "tags": [
+      { "name": "@demo", "astNodeId": "6846055e-4bda-4c48-8722-6ed39b9f6bcc" }
+    ]
+  },
+  "testCaseStartedId": "226fdcf3-2e35-45e8-a2b6-652c9ea7a8a2"
+}

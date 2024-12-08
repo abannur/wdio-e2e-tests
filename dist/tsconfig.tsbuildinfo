@@ -1,0 +1,1 @@
+{"root":["../test/features/step-definitions/demo.ts","../test/features/step-definitions/given.ts","../test/features/step-definitions/hooks.ts","../test/features/step-definitions/then.ts","../test/features/step-definitions/when.ts","../test/features/step-definitions/world.ts"],"errors":true,"version":"5.7.2"}

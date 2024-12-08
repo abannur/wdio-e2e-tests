@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "module": "commonjs",
+        "target": "ES2020",
+        "esModuleInterop": true,
+       // "suppressExcessPropertyErrors": true,
+        "types": [
+            "@wdio/globals/types",
+            "@wdio/types",
+            "node",
+            "expect-webdriverio",
+            "@wdio/cucumber-framework",
+            "chai"
+            
+        ],
+        "skipLibCheck": true,
+        "noEmit": true,
+        "allowImportingTsExtensions": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "strict": false,
+        "outDir": "./dist",
+        "baseUrl": "./",
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "paths": {"*":["node_modules/*"]}
+    },
+    "include": [ "./test/features/step-definitions/*.ts"],
+    "exclude": ["node_modules"]
+}

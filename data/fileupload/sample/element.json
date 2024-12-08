@@ -1,0 +1,38 @@
+{
+  "sessionId": "fb7d1add447488811b711a9163800cb2",
+  "elementId": "f.E6409F09A6D99BC97D5540A7C8E4E5D5.d.39A015801096211C724EA58F8B22E444.e.1",
+  "element-6066-11e4-a52e-4f735466cecf": "f.E6409F09A6D99BC97D5540A7C8E4E5D5.d.39A015801096211C724EA58F8B22E444.e.1",
+  "locator": { "type": "css", "value": "[name=q]" },
+  "selector": "[name=q]",
+  "parent": {
+    "sessionId": "fb7d1add447488811b711a9163800cb2",
+    "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "131.0.6778.86",
+      "chrome": {
+        "chromedriverVersion": "131.0.6778.86 (ee338c5c68e930761e15c97f5af9d8a082271a88-refs/branch-heads/6778@{#2286})",
+        "userDataDir": "C:\\Users\\anita\\AppData\\Local\\Temp\\scoped_dir15728_1740549275"
+      },
+      "fedcm:accounts": true,
+      "goog:chromeOptions": { "debuggerAddress": "localhost:50735" },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {},
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": { "implicit": 15000, "pageLoad": 20000, "script": 30000 },
+      "unhandledPromptBehavior": "ignore",
+      "webSocketUrl": "ws://localhost:50729/session/fb7d1add447488811b711a9163800cb2",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true,
+      "wdio:driverPID": 15728
+    }
+  },
+  "isReactElement": false,
+  "isShadowElement": false
+}
