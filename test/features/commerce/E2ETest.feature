@@ -1,6 +1,6 @@
 Feature: Customer search
 
-    @demo
+    @smoke
     Scenario Outline: <TestID> :External Customer search
         Given Get list of users from reqres.in
         When As a Admin user login to nopcommerce site

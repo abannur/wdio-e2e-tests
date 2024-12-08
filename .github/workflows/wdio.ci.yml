@@ -1,59 +1,31 @@
-name: CI Pipeline
+# This is a basic workflow to help you get started with Actions
 
+name: WDIO-CI
 on:
   push:
-    branches:
-      - master
-      - main
+    branches: [ master, release]
   pull_request:
-    branches:
-      - master
-      - main
-
+    branches: [ master, release]
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    env:
+      RUNNER: ${{secrets.RUNNER}}
+      LOG_LEVEL: ${{secrets.LOG_LEVEL}}
+      TEST_NOP_ADMIN_USERNAME: ${{secrets.TEST_NOP_ADMIN_USERNAME}}
+      TEST_NOP_ADMIN_PASSWORD: ${{secrets.TEST_NOP_ADMIN_PASSWORD}}
+      TEST_STD_USERNAME: ${{secrets.TEST_STD_USERNAME}}
+      TEST_STD_PASSWORD: ${{secrets.TEST_STD_PASSWORD}}
     steps:
-    # Step 1: Checkout Code
-    - name: Checkout code
-      uses: actions/checkout@v3
-
-    # Step 2: Setup Node.js
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 18
-        cache: 'npm'
-
-    # Step 3: Install Dependencies
-    - name: Install dependencies
-      run: npm install
-
-    # Step 4: Run Linting
-    - name: Run Linter
-      run: npm run lint
-
-    # Step 5: Run Tests
-    - name: Run Tests
-      run: npm test
-
-    # Step 6: Build Project
-    - name: Build Project
-      run: npm run build
-
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    if: github.ref == 'refs/heads/main'
-
-    steps:
-    # Step 1: Checkout Code
-    - name: Checkout code
-      uses: actions/checkout@v3
-
-    # Step 2: Deploy Application
-    - name: Deploy to Production
-      run: |
-        echo "Deploying application..."
-        # Add your deployment commands here
+      - name: Install Chromium
+        run: sudo apt-get install chromium-browser
+      - uses: actions/checkout@v3
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.x
+      - name: Install dependencies
+        run: npm install
+      - name: Running smoke tests
+        run: npm run test:smoke
