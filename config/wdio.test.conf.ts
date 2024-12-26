@@ -5,5 +5,16 @@ export const config = Object.assign(baseConfig, {
   environment: "TEST",
   sauceDemoUrl: "https://www.saucedemo.com",
   reqresBaseUrl:"https://reqres.in",
-  nopCommerceBaseURL:"https://admin-demo.nopcommerce.com"
+  nopCommerceBaseURL:"https://admin-demo.nopcommerce.com",
+  sqlConfig : {
+    user: "testuser",
+    password: "demo",
+    database: "testDBName",
+    server: "desktop-server",
+    options: {
+      encrypt: false, // for azure
+      trustServerCertificate: false, // change to true for local dev / self-signed certs
+      trustedConnection:true
+    },
+  }
 });

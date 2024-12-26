@@ -33,6 +33,8 @@
     "chai": "^4.4.1",
     "dotenv": "^10.0.0",
     "geckodriver": "^3.2.0",
+    "msnodesqlv8": "^4.4.0",
+    "mssql": "^11.0.1",
     "supertest": "^6.3.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.4",

@@ -42,7 +42,7 @@ class CustList extends Page {
       let isNotDisplayed= await this.noResultMessage.isDisplayed()
       if(!isNotDisplayed) nameNotExists=true
     } catch (err) {
-      err.message = `Failed searching given firstName ${firstName} and lastName ${lastName},${err.message}`;
+      err.message = `Failed searching given firstName ${firstName} and lastName ${lastName} on customer page,${err.message}`;
       throw err;
     }
     return nameNotExists

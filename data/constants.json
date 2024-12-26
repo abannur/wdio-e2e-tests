@@ -2,5 +2,8 @@
     "REQRES":{
         "GET_USER":"/api/users",
         "QUERY_PARAM":{"page":2}
+    },
+    "DB_QUERIES":{
+       "GET_SALES_QUOTE": "SELECT TOP 1 * FROM testDBName.dbo.tablename where date='2019-10-06'"
     }
 }
